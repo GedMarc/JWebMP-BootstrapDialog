@@ -111,7 +111,7 @@
 //** Global background color for active items (e.g., navs or dropdowns).
 @component-active-bg:       @brand-primary;
 
-//** Width of the `border` for generating carets that indicator dropdowns.
+//** Width of the `border` for generating carets that indicate dropdowns.
 @caret-width-base:          4px;
 //** Carets increase slightly in size for larger components.
 @caret-width-large:         5px;
@@ -863,6 +863,8 @@
 @page-header-border-color:    @gray-lighter;
 //** Width of horizontal description list titles
 @dl-horizontal-offset:        @component-offset-horizontal;
+//** Point at which .dl-horizontal becomes horizontal
+@dl-horizontal-breakpoint:    @grid-float-breakpoint;
 //** Horizontal line color.
 @hr-border:                   @gray-lighter;
 
@@ -954,12 +956,9 @@
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
-    &,
     &:hover,
     &:focus,
-    &.focus,
-    &:active,
-    &.active {
+    &.focus {
       background-color: @background;
           border-color: @border;
     }
@@ -1256,8 +1255,8 @@
 .container-fixed(@gutter: @grid-gutter-width) {
   margin-right: auto;
   margin-left: auto;
-  padding-left:  (@gutter / 2);
-  padding-right: (@gutter / 2);
+  padding-left:  floor((@gutter / 2));
+  padding-right: ceil((@gutter / 2));
   &:extend(.clearfix all);
 }
 
@@ -1379,7 +1378,7 @@
 //
 // Source: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
 
-// Deprecated as of v3.0.1 (will be removed in v4)
+// Deprecated as of v3.0.1 (has been removed in v4)
 .hide-text() {
   font: ~"0/0" a;
   color: transparent;
@@ -1627,9 +1626,9 @@
 // WebKit-style focus
 
 .tab-focus() {
-  // Default
-  outline: thin dotted;
-  // WebKit
+  // WebKit-specific. Other browsers will keep their default outline style.
+  // (Initially tried to also force default via `outline: initial`,
+  // but that seems to erroneously remove the outline in Firefox altogether.)
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -1685,7 +1684,7 @@
 // Vendor Prefixes
 //
 // All vendor mixins are deprecated as of v3.2.0 due to the introduction of
-// Autoprefixer in our Gruntfile. They will be removed in v4.
+// Autoprefixer in our Gruntfile. They have been removed in v4.
 
 // - Animations
 // - Backface visibility
@@ -1738,7 +1737,7 @@
 // Prevent browsers from flickering when using CSS 3D transforms.
 // Default value is `visible`, but can be changed to `hidden`
 
-.backface-visibility(@visibility){
+.backface-visibility(@visibility) {
   -webkit-backface-visibility: @visibility;
      -moz-backface-visibility: @visibility;
           backface-visibility: @visibility;
