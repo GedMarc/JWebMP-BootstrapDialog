@@ -8,8 +8,6 @@
             <file>file:/C:/AESoft/Programs/JWebSwingPlugins/BootstrapDialogPlugin/test/za/co/mmagon/jwebswing/plugins/bootstrap/dialog/BSDialogTest.java</file>
             <file>file:/C:/AESoft/Programs/JWebSwingPlugins/BootstrapDialogPlugin/src/za/co/mmagon/jwebswing/plugins/bootstrap/dialog/BSDialogFeature.java</file>
         </group>
-        <group name="JWebSwing">
-            <file>file:/C:/AESoft/Programs/JWebSwingPlugins/BootstrapDialogPlugin/src/za/co/mmagon/jwebswing/plugins/bootstrap/dialog/BSDialogPageConfigurator.java</file>
-        </group>
+        <group name="JWebSwing"/>
     </open-files>
 </project-private>
