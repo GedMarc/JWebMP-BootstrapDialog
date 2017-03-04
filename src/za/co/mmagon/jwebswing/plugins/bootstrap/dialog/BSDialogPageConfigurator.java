@@ -1,25 +1,18 @@
-/*
- * The MIT License
+/* 
+ * Copyright (C) 2017 Marc Magon
  *
- * Copyright 2017 GedMarc.
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
  *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
  *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package za.co.mmagon.jwebswing.plugins.bootstrap.dialog;
 
@@ -35,10 +28,21 @@ import za.co.mmagon.logger.LogFactory;
  * @since 19 Feb 2017
  *
  */
-@PluginInformation(pluginName = "Bootstrap Dialog", pluginUniqueName = "bootstrap-dialog", pluginDescription = "The Bootstrap Dialog widget for Bootstrap", pluginVersion = "Bootstrap version 3 or 4",
-        pluginDependancyUniqueIDs = "jquery,bootstrap", pluginCategories = "bootstrap,web ui,ui,framework", pluginSubtitle = "Make use of Bootstrap's modal more monkey-friendly.",
-        pluginGitUrl = "https://github.com/GedMarc/JWebSwing-BootstrapDialog", pluginSourceUrl = "https://github.com/EugenMayer/bootstrap-dialog",
-        pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-BootstrapDialog/wiki")
+@PluginInformation(pluginName = "Bootstrap Dialog",
+                   pluginUniqueName = "bootstrap-dialog",
+                   pluginDescription = "The Bootstrap Dialog widget for Bootstrap",
+                   pluginVersion = "BS3.3.7 / 4a6",
+                   pluginDependancyUniqueIDs = "jquery,bootstrap",
+                   pluginCategories = "bootstrap,web ui,ui,framework",
+                   pluginSubtitle = "Make use of Bootstrap's modal more monkey-friendly.",
+                   pluginGitUrl = "https://github.com/GedMarc/JWebSwing-BootstrapDialog",
+                   pluginSourceUrl = "https://github.com/EugenMayer/bootstrap-dialog",
+                   pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-BootstrapDialog/wiki",
+                   pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/BootstrapDialogPlugin.jar/download",
+                   pluginIconUrl = "bower_components/bootstrap3/bootstrap_dialog_icon.jpg",
+                   pluginIconImageUrl = "bower_components/bootstrap3/bootstrap_dialog_logo.jpg",
+                   pluginLastUpdatedDate = "2017/03/04"
+)
 public class BSDialogPageConfigurator extends PageConfigurator
 {
 
