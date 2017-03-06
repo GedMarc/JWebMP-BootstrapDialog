@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -39,8 +39,8 @@ import za.co.mmagon.logger.LogFactory;
                    pluginSourceUrl = "https://github.com/EugenMayer/bootstrap-dialog",
                    pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-BootstrapDialog/wiki",
                    pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/BootstrapDialogPlugin.jar/download",
-                   pluginIconUrl = "bower_components/bootstrap3/bootstrap_dialog_icon.jpg",
-                   pluginIconImageUrl = "bower_components/bootstrap3/bootstrap_dialog_logo.jpg",
+                   pluginIconUrl = "bower_components/bootstrap3-dialog/bootstrap_dialog_icon.jpg",
+                   pluginIconImageUrl = "bower_components/bootstrap3-dialog/bootstrap_dialog_logo.jpg",
                    pluginLastUpdatedDate = "2017/03/04"
 )
 public class BSDialogPageConfigurator extends PageConfigurator
