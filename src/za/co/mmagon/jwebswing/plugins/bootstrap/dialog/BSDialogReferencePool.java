@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -29,10 +29,10 @@ import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
  */
 public enum BSDialogReferencePool implements ReferencePool
 {
-    BootstrapDialogReference(new JavascriptReference("BootstrapDialog", 1.351, "bower_components/bootstrap3-dialog/dist/js/bootstrap-dialog.js", 15),
-            new CSSReference("BootstrapDialogCSS", 1.351, "bower_components/bootstrap3-dialog/dist/css/bootstrap-dialog.css")),
-    Bootstrap4DialogReference(new JavascriptReference("Bootstrap4Dialog", 1.351, "bower_components/bootstrap4-dialog/dist/js/bootstrap-dialog.js", 15),
-            new CSSReference("Bootstrap4DialogCSS", 1.351, "bower_components/bootstrap4-dialog/dist/css/bootstrap-dialog.css"));
+    BootstrapDialogReference(new JavascriptReference("BootstrapDialog", 1.351, "bower_components/bootstrap3-dialog/dist/js/bootstrap-dialog.min.js", 15),
+                             new CSSReference("BootstrapDialogCSS", 1.351, "bower_components/bootstrap3-dialog/dist/css/bootstrap-dialog.min.css")),
+    Bootstrap4DialogReference(new JavascriptReference("Bootstrap4Dialog", 1.351, "bower_components/bootstrap4-dialog/dist/js/bootstrap-dialog.min.js", 15),
+                              new CSSReference("Bootstrap4DialogCSS", 1.351, "bower_components/bootstrap4-dialog/dist/css/bootstrap-dialog.min.css"));
 
     private BSDialogReferencePool()
     {

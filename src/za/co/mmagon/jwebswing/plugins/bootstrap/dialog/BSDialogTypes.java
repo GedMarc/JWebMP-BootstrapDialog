@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,16 +17,15 @@
 package za.co.mmagon.jwebswing.plugins.bootstrap.dialog;
 
 import com.fasterxml.jackson.annotation.JsonValue;
-import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  *
  * @author GedMarc
  * @since Oct 3, 2016
  * @version 1.0
- * 
+ *
  */
-public enum BSDialogTypes 
+public enum BSDialogTypes
 {
     TYPE_DEFAULT,
     TYPE_INFO,
@@ -34,13 +33,12 @@ public enum BSDialogTypes
     TYPE_SUCCESS,
     TYPE_WARNING,
     TYPE_DANGER;
-    
+
     @JsonValue
     @Override
     public String toString()
     {
         return name().toLowerCase().replace('_', '-');
     }
-    
-    
+
 }

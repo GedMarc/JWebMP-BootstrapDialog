@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -20,7 +20,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import za.co.mmagon.jwebswing.base.ComponentHierarchyBase;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
-import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptPartType;
 
 /**
  * All the options for the tooltip library
@@ -474,12 +473,6 @@ public class BSDialogOptions<J extends BSDialogOptions>
     {
         this.data = data;
         return (J) this;
-    }
-
-    @Override
-    public JavascriptPartType getJavascriptType()
-    {
-        return JavascriptPartType.Javascript;
     }
 
 }
