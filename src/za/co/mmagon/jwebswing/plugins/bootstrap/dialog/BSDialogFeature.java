@@ -44,7 +44,7 @@ public class BSDialogFeature extends Feature<BSDialogOptions, BSDialogFeature> i
     {
         super("BSDialogFeature");
         setComponent(forComponent);
-        BootstrapPageConfigurator.setBootstrapRequired(forComponent, true);
+        BootstrapPageConfigurator.setRequired(forComponent, true);
     }
 
     /**
