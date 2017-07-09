@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -30,8 +30,8 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * @version 1.0
  */
 @ComponentInformation(name = "Bootstrap Dialog Component", description = "A JWebSwing Component for Bootstrap to display dialog message boxes in an easier fashion",
-        url = "https://github.com/EugenMayer/bootstrap-dialog", wikiUrl = "https://github.com/GedMarc/JWebSwing-BootstrapDialog/wiki")
-public class BSDialog<J extends BSDialog> extends Div<BSDialogChildren, BSDialogAttributes, BSDialogFeatures, BSDialogEvents, J>
+                      url = "https://github.com/EugenMayer/bootstrap-dialog", wikiUrl = "https://github.com/GedMarc/JWebSwing-BootstrapDialog/wiki")
+public class BSDialog<J extends BSDialog<J>> extends Div<BSDialogChildren, BSDialogAttributes, BSDialogFeatures, BSDialogEvents, J>
 {
 
     private static final long serialVersionUID = 1L;
