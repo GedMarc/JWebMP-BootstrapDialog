@@ -23,77 +23,78 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * An implementation of the Bootstrap Dialog project.
  * <p>
- * @author Marc Magon
+ *
  * @param <J>
  *
- * @since 29 Aug 2015
+ * @author Marc Magon
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "Bootstrap Dialog Component", description = "A JWebSwing Component for Bootstrap to display dialog message boxes in an easier fashion",
-                      url = "https://github.com/EugenMayer/bootstrap-dialog", wikiUrl = "https://github.com/GedMarc/JWebSwing-BootstrapDialog/wiki")
+		url = "https://github.com/EugenMayer/bootstrap-dialog", wikiUrl = "https://github.com/GedMarc/JWebSwing-BootstrapDialog/wiki")
 public class BSDialog<J extends BSDialog<J>> extends Div<BSDialogChildren, BSDialogAttributes, BSDialogFeatures, BSDialogEvents, J>
 {
-
-    private static final long serialVersionUID = 1L;
-    private BSDialogFeature feature;
-
-    /**
-     * Constructs a new instance of the Bootstrap Dialog Plugin
-     */
-    public BSDialog()
-    {
-        addFeature(getFeature());
-    }
-
-    /**
-     * Returns the JQuery Feature for this component
-     *
-     * @return
-     */
-    public final BSDialogFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new BSDialogFeature(this);
-        }
-        return feature;
-    }
-
-    /**
-     * Sets the options on this component
-     *
-     * @return
-     */
-    @Override
-    public BSDialogOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
-
-    /**
-     * Shortcut reference to the title in get Options
-     *
-     * @param title
-     *
-     * @return
-     */
-    public J setTitle(Component title)
-    {
-        getOptions().setTitle(title);
-        return (J) this;
-    }
-
-    /**
-     * Sets the message of this dialog
-     *
-     * @param message
-     *
-     * @return
-     */
-    public J setMessage(Component message)
-    {
-        getOptions().setMessage(message);
-        return (J) this;
-    }
-
+	
+	private static final long serialVersionUID = 1L;
+	private BSDialogFeature feature;
+	
+	/**
+	 * Constructs a new instance of the Bootstrap Dialog Plugin
+	 */
+	public BSDialog()
+	{
+		addFeature(getFeature());
+	}
+	
+	/**
+	 * Returns the JQuery Feature for this component
+	 *
+	 * @return
+	 */
+	public final BSDialogFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new BSDialogFeature(this);
+		}
+		return feature;
+	}
+	
+	/**
+	 * Sets the options on this component
+	 *
+	 * @return
+	 */
+	@Override
+	public BSDialogOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
+	
+	/**
+	 * Shortcut reference to the title in get Options
+	 *
+	 * @param title
+	 *
+	 * @return
+	 */
+	public J setTitle(Component title)
+	{
+		getOptions().setTitle(title);
+		return (J) this;
+	}
+	
+	/**
+	 * Sets the message of this dialog
+	 *
+	 * @param message
+	 *
+	 * @return
+	 */
+	public J setMessage(Component message)
+	{
+		getOptions().setMessage(message);
+		return (J) this;
+	}
+	
 }

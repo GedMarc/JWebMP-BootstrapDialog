@@ -19,26 +19,24 @@ package za.co.mmagon.jwebswing.plugins.bootstrap.dialog;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- *
  * @author GedMarc
- * @since Oct 3, 2016
  * @version 1.0
- *
+ * @since Oct 3, 2016
  */
 public enum BSDialogTypes
 {
-    TYPE_DEFAULT,
-    TYPE_INFO,
-    TYPE_PRIMARY,
-    TYPE_SUCCESS,
-    TYPE_WARNING,
-    TYPE_DANGER;
-
-    @JsonValue
-    @Override
-    public String toString()
-    {
-        return name().toLowerCase().replace('_', '-');
-    }
-
+	TYPE_DEFAULT,
+	TYPE_INFO,
+	TYPE_PRIMARY,
+	TYPE_SUCCESS,
+	TYPE_WARNING,
+	TYPE_DANGER;
+	
+	@JsonValue
+	@Override
+	public String toString()
+	{
+		return name().toLowerCase().replace('_', '-');
+	}
+	
 }

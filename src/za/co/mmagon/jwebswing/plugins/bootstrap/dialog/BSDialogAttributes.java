@@ -19,17 +19,16 @@ package za.co.mmagon.jwebswing.plugins.bootstrap.dialog;
 import za.co.mmagon.jwebswing.base.html.interfaces.AttributeDefinitions;
 
 /**
- *
  * @author GedMarc
  */
 enum BSDialogAttributes implements AttributeDefinitions
 {
-
-    Visibility;
-
-    @Override
-    public boolean isKeyword()
-    {
-        return false;
-    }
+	
+	Visibility;
+	
+	@Override
+	public boolean isKeyword()
+	{
+		return false;
+	}
 }

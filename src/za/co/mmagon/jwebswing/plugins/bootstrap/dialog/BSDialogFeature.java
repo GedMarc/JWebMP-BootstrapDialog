@@ -25,49 +25,51 @@ import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
  *
  * @author MMagon
- * @since 2013/01/16
  * @version 1.0
+ * @since 2013/01/16
  */
 public class BSDialogFeature extends Feature<BSDialogOptions, BSDialogFeature> implements BSDialogFeatures, GlobalFeatures
 {
-
-    private static final long serialVersionUID = 1L;
-
-    private BSDialogOptions options;
-
-    /**
-     * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
-     * <p>
-     * @param forComponent
-     */
-    public BSDialogFeature(Component forComponent)
-    {
-        super("BSDialogFeature");
-        setComponent(forComponent);
-        BootstrapPageConfigurator.setRequired(forComponent, true);
-    }
-
-    /**
-     * Returns all the tooltip options
-     * <p>
-     * @return
-     */
-    @Override
-    public BSDialogOptions getOptions()
-    {
-        if (options == null)
-        {
-            options = new BSDialogOptions();
-        }
-        return options;
-    }
-
-    @Override
-    public void assignFunctionsToComponent()
-    {
-        String requiredString = "BootstrapDialog.show(";
-        requiredString += getOptions().toString();
-        requiredString += ");" + getNewLine();
-        addQuery(requiredString);
-    }
+	
+	private static final long serialVersionUID = 1L;
+	
+	private BSDialogOptions options;
+	
+	/**
+	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
+	 * <p>
+	 *
+	 * @param forComponent
+	 */
+	public BSDialogFeature(Component forComponent)
+	{
+		super("BSDialogFeature");
+		setComponent(forComponent);
+		BootstrapPageConfigurator.setRequired(forComponent, true);
+	}
+	
+	/**
+	 * Returns all the tooltip options
+	 * <p>
+	 *
+	 * @return
+	 */
+	@Override
+	public BSDialogOptions getOptions()
+	{
+		if (options == null)
+		{
+			options = new BSDialogOptions();
+		}
+		return options;
+	}
+	
+	@Override
+	public void assignFunctionsToComponent()
+	{
+		String requiredString = "BootstrapDialog.show(";
+		requiredString += getOptions().toString();
+		requiredString += ");" + getNewLine();
+		addQuery(requiredString);
+	}
 }

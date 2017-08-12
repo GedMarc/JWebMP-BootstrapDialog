@@ -19,24 +19,22 @@ package za.co.mmagon.jwebswing.plugins.bootstrap.dialog;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- *
  * @author GedMarc
- * @since Oct 3, 2016
  * @version 1.0
- * 
+ * @since Oct 3, 2016
  */
-public enum BSDialogDialogSizes 
+public enum BSDialogDialogSizes
 {
-    SIZE_NORMAL,
-    SIZE_WIDE,
-    SIZE_LARGE;
-
-    @JsonValue
-    @Override
-    public String toString()
-    {
-        return name().toLowerCase().replace('_', '-');
-    }
-    
-    
+	SIZE_NORMAL,
+	SIZE_WIDE,
+	SIZE_LARGE;
+	
+	@JsonValue
+	@Override
+	public String toString()
+	{
+		return name().toLowerCase().replace('_', '-');
+	}
+	
+	
 }

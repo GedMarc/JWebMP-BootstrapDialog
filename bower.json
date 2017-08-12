@@ -17,7 +17,7 @@
     "tests"
   ],
   "dependencies": {
-		"bootstrap3-dialog": "^1.35.3",
-		"bootstrap4-dialog": "https://github.com/GedMarc/bootstrap-dialog.git#*"
+    "bootstrap3-dialog": "^1.35.3",
+    "bootstrap4-dialog": "https://github.com/GedMarc/bootstrap-dialog.git#*"
   }
 }

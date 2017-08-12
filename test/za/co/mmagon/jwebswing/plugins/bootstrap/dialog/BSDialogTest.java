@@ -26,22 +26,21 @@ package za.co.mmagon.jwebswing.plugins.bootstrap.dialog;
 import org.junit.Test;
 
 /**
- *
  * @author GedMarc
  */
 public class BSDialogTest
 {
-
-    public BSDialogTest()
-    {
-    }
-
-    @Test
-    public void testSomeMethod()
-    {
-        BSDialog dialog = new BSDialog();
-        dialog.getOptions().setClosable(true).setAutodestroy(true).setCloseIcon("close");
-        System.out.println(dialog.renderJavascript());
-    }
-
+	
+	public BSDialogTest()
+	{
+	}
+	
+	@Test
+	public void testSomeMethod()
+	{
+		BSDialog dialog = new BSDialog();
+		dialog.getOptions().setClosable(true).setAutodestroy(true).setCloseIcon("close");
+		System.out.println(dialog.renderJavascript());
+	}
+	
 }
