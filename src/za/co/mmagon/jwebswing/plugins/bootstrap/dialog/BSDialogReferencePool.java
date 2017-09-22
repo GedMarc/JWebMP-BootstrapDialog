@@ -36,11 +36,12 @@ public enum BSDialogReferencePool implements ReferencePool
 	
 	private JavascriptReference javaScriptReference;
 	private CSSReference cssReference;
-	private BSDialogReferencePool()
+	
+	BSDialogReferencePool()
 	{
 	}
 	
-	private BSDialogReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	BSDialogReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
 		this.javaScriptReference.setPriority(RequirementsPriority.Fourth);

@@ -39,7 +39,7 @@
      * BootstrapDialogModal === Modified Modal.
      * ================================================ */
     var Modal = $.fn.modal.Constructor;
-    var BootstrapDialogModal = function(element, options) {
+    var BootstrapDialogModal = function (element, options) {
         if (/4\.0\.\d+/.test($.fn.modal.Constructor.VERSION)) { //FIXME for BootstrapV4
             return new Modal(element, options);
         } else {
@@ -377,7 +377,7 @@
         handleModalBackdropEvent: BootstrapDialog.METHODS_TO_OVERRIDE['v3.1']['handleModalBackdropEvent'],
         updateZIndex: BootstrapDialog.METHODS_TO_OVERRIDE['v3.1']['updateZIndex'],
         open: BootstrapDialog.METHODS_TO_OVERRIDE['v3.1']['open'],
-        getModalForBootstrapDialogModal : function () {
+        getModalForBootstrapDialogModal: function () {
             return this.getModal().get(0);
         }
     };
@@ -863,7 +863,7 @@
 
             // title
             if (typeof button.title !== 'undefined') {
-                $button.attr('title',  button.title);
+                $button.attr('title', button.title);
             }
 
             // Css class
