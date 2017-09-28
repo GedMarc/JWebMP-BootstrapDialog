@@ -23,7 +23,7 @@
  */
 package za.co.mmagon.jwebswing.plugins.bootstrap.dialog;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author GedMarc
