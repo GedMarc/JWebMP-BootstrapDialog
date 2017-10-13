@@ -21,6 +21,8 @@ import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
 import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
 
+import java.util.Objects;
+
 /**
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
  *
@@ -28,11 +30,13 @@ import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
  * @version 1.0
  * @since 2013/01/16
  */
-public class BSDialogFeature extends Feature<BSDialogOptions, BSDialogFeature> implements BSDialogFeatures, GlobalFeatures
+public class BSDialogFeature<J extends BSDialogFeature<J>> extends Feature<BSDialogOptions, J> implements BSDialogFeatures, GlobalFeatures
 {
 	
 	private static final long serialVersionUID = 1L;
-	
+	/**
+	 * The options for the dialog
+	 */
 	private BSDialogOptions options;
 	
 	/**
@@ -71,5 +75,30 @@ public class BSDialogFeature extends Feature<BSDialogOptions, BSDialogFeature> i
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
+	}
+	
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof BSDialogFeature))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+		BSDialogFeature<?> that = (BSDialogFeature<?>) o;
+		return Objects.equals(getComponent(), that.getComponent());
+	}
+	
+	@Override
+	public int hashCode()
+	{
+		return Objects.hash(super.hashCode(), getOptions());
 	}
 }

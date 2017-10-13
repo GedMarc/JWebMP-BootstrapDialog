@@ -20,6 +20,8 @@ import za.co.mmagon.jwebswing.Component;
 import za.co.mmagon.jwebswing.base.html.Div;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
+import java.util.Objects;
+
 /**
  * An implementation of the Bootstrap Dialog project.
  * <p>
@@ -97,4 +99,28 @@ public class BSDialog<J extends BSDialog<J>> extends Div<BSDialogChildren, BSDia
 		return (J) this;
 	}
 	
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof BSDialog))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+		BSDialog<?> bsDialog = (BSDialog<?>) o;
+		return Objects.equals(getComponent(), bsDialog.getComponent());
+	}
+	
+	@Override
+	public int hashCode()
+	{
+		return Objects.hash(super.hashCode(), getFeature());
+	}
 }

@@ -39,24 +39,24 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	
 	private static final long serialVersionUID = 1L;
 	
-	private BSDialogTypes type;// BootstrapDialogType.TYPE_PRIMARY,
-	private BSDialogDialogSizes size;//: BootstrapDialog.SIZE_NORMAL,
+	private BSDialogTypes type;
+	private BSDialogDialogSizes size;
 	private String cssClass;
 	@JsonIgnore
-	private ComponentHierarchyBase title;//: null,
+	private ComponentHierarchyBase title;
 	@JsonIgnore
-	private ComponentHierarchyBase message;//: null,
-	private Boolean nl2br;//: true,
-	private Boolean closable;//: true,
-	private Boolean closeByBackdrop;//: true,
-	private Boolean closeByKeyboard;//: true,
-	private String closeIcon;//: '&#215;',
-	private String spinicon;//: BootstrapDialog.ICON_SPINNER,
-	private Boolean autodestroy;//: true,
-	private Boolean draggable;//: false,
-	private Boolean animate;//: true,
-	private String description;//: '',
-	private Integer tabindex;//: -1
+	private ComponentHierarchyBase message;
+	private Boolean nl2br;
+	private Boolean closable;
+	private Boolean closeByBackdrop;
+	private Boolean closeByKeyboard;
+	private String closeIcon;
+	private String spinicon;
+	private Boolean autodestroy;
+	private Boolean draggable;
+	private Boolean animate;
+	private String description;
+	private Integer tabindex;
 	private String data;
 	
 	/**
@@ -64,7 +64,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	 */
 	public BSDialogOptions()
 	{
-	
+		//Nothing Needed
 	}
 	
 	/**
