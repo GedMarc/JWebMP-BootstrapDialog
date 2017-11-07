@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.bootstrap.dialog;
 
 import com.fasterxml.jackson.annotation.JsonValue;
+import za.co.mmagon.jwebswing.utilities.StaticStrings;
 
 /**
  * @author GedMarc
@@ -33,7 +34,7 @@ public enum BSDialogDialogSizes
 	@Override
 	public String toString()
 	{
-		return name().toLowerCase().replace('_', '-');
+		return name().toLowerCase().replace(StaticStrings.CHAR_UNDERSCORE, '-');
 	}
 	
 	
