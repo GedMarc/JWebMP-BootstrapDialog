@@ -23,6 +23,7 @@
  */
 package za.co.mmagon.jwebswing.plugins.bootstrap.dialog;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -40,7 +41,19 @@ public class BSDialogTest
 	{
 		BSDialog dialog = new BSDialog();
 		dialog.getOptions().setClosable(true).setAutodestroy(true).setCloseIcon("close");
-		System.out.println(dialog.renderJavascript());
+		System.out.println(dialog.renderJavascript().toString().trim().replaceAll("\n", "").replaceAll("\t", ""));
+		Assertions.assertEquals("BootstrapDialog.show({  \"title\" : \"\",  \"message\" : \"\",  \"closable\" : true,  \"closeIcon\" : \"close\",  \"autodestroy\" : true});", dialog.renderJavascript().toString().trim().replaceAll("\n", "").replaceAll("\t", ""));
 	}
-	
+
+	@Test
+	public void testSomeMethod2()
+	{
+		BSDialog dialog = new BSDialog();
+		dialog.getOptions().setClosable(true).setAutodestroy(true).setCloseIcon("close");
+		dialog.getOptions().setSize(BSDialogDialogSizes.SIZE_LARGE);
+		dialog.getOptions().setType(BSDialogTypes.TYPE_WARNING);
+		System.out.println(dialog.renderJavascript().toString().trim().replaceAll("\n", "").replaceAll("\t", ""));
+		Assertions.assertEquals("BootstrapDialog.show({  \"title\" : \"\",  \"message\" : \"\",  \"type\" : \"type-warning\",  \"size\" : \"size-large\",  \"closable\" : true,  \"closeIcon\" : \"close\",  \"autodestroy\" : true});",
+		                        dialog.renderJavascript().toString().trim().replaceAll("\n", "").replaceAll("\t", ""));
+	}
 }

@@ -18,6 +18,7 @@ package za.co.mmagon.jwebswing.plugins.bootstrap.dialog;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import za.co.mmagon.jwebswing.base.ComponentHierarchyBase;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
@@ -33,6 +34,7 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  * <p>
  * @since Mar 4, 2015
  */
+@JsonPropertyOrder({"title", "message"})
 public class BSDialogOptions<J extends BSDialogOptions>
 		extends JavaScriptPart
 {
