@@ -44,16 +44,16 @@ import java.util.logging.Logger;
 )
 public class BSDialogPageConfigurator extends PageConfigurator
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	private static final Logger log = LogFactory.getInstance().getLogger("BootstrapDialog");
-	
+
 	public BSDialogPageConfigurator()
 	{
 		super();
 		setSortOrder(150);
 	}
-	
+
 	@Override
 	@SuppressWarnings("unchecked")
 	public Page configure(Page page)
@@ -65,7 +65,7 @@ public class BSDialogPageConfigurator extends PageConfigurator
 			{
 				page.getBody().getJavascriptReferences().add(BSDialogReferencePool.Bootstrap4DialogReference.getJavaScriptReference());
 				page.getBody().getCssReferences().add(BSDialogReferencePool.Bootstrap4DialogReference.getCssReference());
-				
+
 				page.getBody().getJavascriptReferences().remove(BSDialogReferencePool.BootstrapDialogReference.getJavaScriptReference());
 				page.getBody().getCssReferences().remove(BSDialogReferencePool.BootstrapDialogReference.getCssReference());
 			}
@@ -76,7 +76,7 @@ public class BSDialogPageConfigurator extends PageConfigurator
 			}
 			log.fine("Finished with Bootstrap Dialog");
 		}
-		
+
 		return page;
 	}
 }

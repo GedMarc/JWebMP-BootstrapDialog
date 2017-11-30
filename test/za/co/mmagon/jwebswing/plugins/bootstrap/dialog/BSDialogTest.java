@@ -31,11 +31,11 @@ import org.junit.jupiter.api.Test;
  */
 public class BSDialogTest
 {
-	
+
 	public BSDialogTest()
 	{
 	}
-	
+
 	@Test
 	public void testSomeMethod()
 	{

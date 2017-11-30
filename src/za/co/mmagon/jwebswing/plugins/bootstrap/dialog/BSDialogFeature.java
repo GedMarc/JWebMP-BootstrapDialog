@@ -32,13 +32,13 @@ import java.util.Objects;
  */
 public class BSDialogFeature<J extends BSDialogFeature<J>> extends Feature<BSDialogOptions, J> implements BSDialogFeatures, GlobalFeatures
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	/**
 	 * The options for the dialog
 	 */
 	private BSDialogOptions options;
-	
+
 	/**
 	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
 	 * <p>
@@ -51,7 +51,7 @@ public class BSDialogFeature<J extends BSDialogFeature<J>> extends Feature<BSDia
 		setComponent(forComponent);
 		BootstrapPageConfigurator.setRequired(forComponent, true);
 	}
-	
+
 	/**
 	 * Returns all the tooltip options
 	 * <p>
@@ -67,7 +67,7 @@ public class BSDialogFeature<J extends BSDialogFeature<J>> extends Feature<BSDia
 		}
 		return options;
 	}
-	
+
 	@Override
 	public void assignFunctionsToComponent()
 	{
@@ -76,7 +76,7 @@ public class BSDialogFeature<J extends BSDialogFeature<J>> extends Feature<BSDia
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
 	}
-	
+
 	@Override
 	public boolean equals(Object o)
 	{
@@ -95,7 +95,7 @@ public class BSDialogFeature<J extends BSDialogFeature<J>> extends Feature<BSDia
 		BSDialogFeature<?> that = (BSDialogFeature<?>) o;
 		return Objects.equals(getComponent(), that.getComponent());
 	}
-	
+
 	@Override
 	public int hashCode()
 	{

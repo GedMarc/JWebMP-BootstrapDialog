@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -29,13 +29,13 @@ public enum BSDialogDialogSizes
 	SIZE_NORMAL,
 	SIZE_WIDE,
 	SIZE_LARGE;
-	
+
 	@JsonValue
 	@Override
 	public String toString()
 	{
 		return name().toLowerCase().replace(StaticStrings.CHAR_UNDERSCORE, '-');
 	}
-	
-	
+
+
 }

@@ -33,14 +33,14 @@ public enum BSDialogReferencePool implements ReferencePool
 	                         new CSSReference("BootstrapDialogCSS", 1.351, "bower_components/bootstrap3-dialog/dist/css/bootstrap-dialog.min.css")),
 	Bootstrap4DialogReference(new JavascriptReference("Bootstrap4Dialog", 1.351, "bower_components/bootstrap4-dialog/dist/js/bootstrap-dialog.min.js", 15),
 	                          new CSSReference("Bootstrap4DialogCSS", 1.351, "bower_components/bootstrap4-dialog/dist/css/bootstrap-dialog.min.css"));
-	
+
 	private JavascriptReference javaScriptReference;
 	private CSSReference cssReference;
-	
+
 	BSDialogReferencePool()
 	{
 	}
-	
+
 	BSDialogReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
@@ -48,28 +48,28 @@ public enum BSDialogReferencePool implements ReferencePool
 		this.cssReference = cssReference;
 		this.cssReference.setPriority(RequirementsPriority.Fourth);
 	}
-	
-	@Override
-	public JavascriptReference getJavaScriptReference()
-	{
-		return javaScriptReference;
-	}
-	
-	@Override
-	public void setJavaScriptReference(JavascriptReference javaScriptReference)
-	{
-		this.javaScriptReference = javaScriptReference;
-	}
-	
+
 	@Override
 	public CSSReference getCssReference()
 	{
 		return cssReference;
 	}
-	
+
 	@Override
 	public void setCssReference(CSSReference cssReference)
 	{
 		this.cssReference = cssReference;
+	}
+
+	@Override
+	public JavascriptReference getJavaScriptReference()
+	{
+		return javaScriptReference;
+	}
+
+	@Override
+	public void setJavaScriptReference(JavascriptReference javaScriptReference)
+	{
+		this.javaScriptReference = javaScriptReference;
 	}
 }

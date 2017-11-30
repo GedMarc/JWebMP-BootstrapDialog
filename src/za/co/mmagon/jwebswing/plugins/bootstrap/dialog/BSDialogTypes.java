@@ -32,12 +32,12 @@ public enum BSDialogTypes
 	TYPE_SUCCESS,
 	TYPE_WARNING,
 	TYPE_DANGER;
-	
+
 	@JsonValue
 	@Override
 	public String toString()
 	{
 		return name().toLowerCase().replace(StaticStrings.CHAR_UNDERSCORE, '-');
 	}
-	
+
 }

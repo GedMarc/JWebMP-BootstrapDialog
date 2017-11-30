@@ -30,17 +30,17 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  *
  * @author GedMarc
  * @version 1.0
- * <p>
- * <p>
+ * 		<p>
+ * 		<p>
  * @since Mar 4, 2015
  */
 @JsonPropertyOrder({"title", "message"})
 public class BSDialogOptions<J extends BSDialogOptions>
 		extends JavaScriptPart
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	private BSDialogTypes type;
 	private BSDialogDialogSizes size;
 	private String cssClass;
@@ -60,7 +60,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	private String description;
 	private Integer tabindex;
 	private String data;
-	
+
 	/**
 	 * Default constructor
 	 */
@@ -68,7 +68,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	{
 		//Nothing Needed
 	}
-	
+
 	/**
 	 * Give your dialog a specific look, BootstrapDialog.TYPE_DEFAULT or type-default BootstrapDialog.TYPE_INFO or type-info BootstrapDialog.TYPE_PRIMARY or type-primary (default)
 	 * BootstrapDialog.TYPE_SUCCESS or type-success BootstrapDialog.TYPE_WARNING or type-warning BootstrapDialog.TYPE_DANGER or type-danger
@@ -79,7 +79,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	{
 		return type;
 	}
-	
+
 	/**
 	 * Give your dialog a specific look, BootstrapDialog.TYPE_DEFAULT or type-default BootstrapDialog.TYPE_INFO or type-info BootstrapDialog.TYPE_PRIMARY or type-primary (default)
 	 * BootstrapDialog.TYPE_SUCCESS or type-success BootstrapDialog.TYPE_WARNING or type-warning BootstrapDialog.TYPE_DANGER or type-danger
@@ -93,7 +93,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 		this.type = type;
 		return (J) this;
 	}
-	
+
 	/**
 	 * BootstrapDialog.SIZE_NORMAL or size-normal (default) BootstrapDialog.SIZE_WIDE or size-wide BootstrapDialog.SIZE_LARGE or size-large
 	 *
@@ -103,7 +103,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	{
 		return size;
 	}
-	
+
 	/**
 	 * BootstrapDialog.SIZE_NORMAL or size-normal (default) BootstrapDialog.SIZE_WIDE or size-wide BootstrapDialog.SIZE_LARGE or size-large
 	 *
@@ -116,7 +116,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 		this.size = size;
 		return (J) this;
 	}
-	
+
 	/**
 	 * Additional CSS classes that will be added to your dialog.
 	 *
@@ -126,7 +126,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	{
 		return cssClass;
 	}
-	
+
 	/**
 	 * Additional CSS classes that will be added to your dialog.
 	 *
@@ -139,7 +139,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 		this.cssClass = cssClass;
 		return (J) this;
 	}
-	
+
 	/**
 	 * Components HTML
 	 *
@@ -149,7 +149,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	{
 		return title;
 	}
-	
+
 	/**
 	 * Sets the components HTML to render
 	 *
@@ -162,13 +162,13 @@ public class BSDialogOptions<J extends BSDialogOptions>
 		this.title = title;
 		return (J) this;
 	}
-	
+
 	@JsonProperty("title")
 	private String getTitleHTML()
 	{
 		return this.title == null ? "" : this.title.toString(true);
 	}
-	
+
 	/**
 	 * Gets the message component
 	 *
@@ -178,7 +178,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	{
 		return message;
 	}
-	
+
 	/**
 	 * Sets the message component
 	 *
@@ -191,13 +191,13 @@ public class BSDialogOptions<J extends BSDialogOptions>
 		this.message = message;
 		return (J) this;
 	}
-	
+
 	@JsonProperty("message")
 	private String getMessageHTML()
 	{
 		return this.message == null ? "" : this.message.toString(true);
 	}
-	
+
 	/**
 	 * Automatically convert line breaking character to &lt;br /&gt; if it's set to true, everything keeps original if it's false.
 	 *
@@ -207,7 +207,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	{
 		return nl2br;
 	}
-	
+
 	/**
 	 * Automatically convert line breaking character to &lt;br /&gt; if it's set to true, everything keeps original if it's false.
 	 *
@@ -220,7 +220,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 		this.nl2br = nl2br;
 		return (J) this;
 	}
-	
+
 	/**
 	 * When set to true, you can close the dialog by:
 	 * <p>
@@ -232,7 +232,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	{
 		return closable;
 	}
-	
+
 	/**
 	 * When set to true, you can close the dialog by:
 	 * <p>
@@ -247,7 +247,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 		this.closable = closable;
 		return (J) this;
 	}
-	
+
 	/**
 	 * Whether or not to close by the backdrop
 	 *
@@ -257,7 +257,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	{
 		return closeByBackdrop;
 	}
-	
+
 	/**
 	 * Sets to close by the backdrop or not
 	 *
@@ -270,7 +270,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 		this.closeByBackdrop = closeByBackdrop;
 		return (J) this;
 	}
-	
+
 	/**
 	 * Sets to close by keyboard press
 	 *
@@ -280,7 +280,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	{
 		return closeByKeyboard;
 	}
-	
+
 	/**
 	 * Sets close by keyboard
 	 *
@@ -293,7 +293,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 		this.closeByKeyboard = closeByKeyboard;
 		return (J) this;
 	}
-	
+
 	/**
 	 * Sets the close icon
 	 *
@@ -303,7 +303,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	{
 		return closeIcon;
 	}
-	
+
 	/**
 	 * Sets the close icon
 	 *
@@ -316,7 +316,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 		this.closeIcon = closeIcon;
 		return (J) this;
 	}
-	
+
 	/**
 	 * Sets the spin icon
 	 *
@@ -326,7 +326,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	{
 		return spinicon;
 	}
-	
+
 	/**
 	 * Sets the spin icon
 	 *
@@ -339,7 +339,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 		this.spinicon = spinicon;
 		return (J) this;
 	}
-	
+
 	/**
 	 * Whether or not to auto destroy the dialog
 	 *
@@ -349,7 +349,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	{
 		return autodestroy;
 	}
-	
+
 	/**
 	 * Whether or not to auto destroy
 	 *
@@ -362,7 +362,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 		this.autodestroy = autodestroy;
 		return (J) this;
 	}
-	
+
 	/**
 	 * Sets if the dialog is drag-able
 	 *
@@ -372,7 +372,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	{
 		return draggable;
 	}
-	
+
 	/**
 	 * Sets if the dialog is drag-able
 	 *
@@ -385,7 +385,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 		this.draggable = draggable;
 		return (J) this;
 	}
-	
+
 	/**
 	 * Sets if the dialog must animate
 	 *
@@ -395,7 +395,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	{
 		return animate;
 	}
-	
+
 	/**
 	 * Sets if the dialog must animate
 	 *
@@ -408,7 +408,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 		this.animate = animate;
 		return (J) this;
 	}
-	
+
 	/**
 	 * Sets the aria description
 	 *
@@ -418,7 +418,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	{
 		return description;
 	}
-	
+
 	/**
 	 * Sets the dialog description or aria description
 	 *
@@ -431,7 +431,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 		this.description = description;
 		return (J) this;
 	}
-	
+
 	/**
 	 * Gets the tab index
 	 *
@@ -441,7 +441,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	{
 		return tabindex;
 	}
-	
+
 	/**
 	 * Sets the tab index
 	 *
@@ -454,7 +454,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 		this.tabindex = tabindex;
 		return (J) this;
 	}
-	
+
 	/**
 	 * Sets any data being passed into the dialog
 	 *
@@ -464,7 +464,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	{
 		return data;
 	}
-	
+
 	/**
 	 * Sets any data being passed into the dialog
 	 *
@@ -477,5 +477,5 @@ public class BSDialogOptions<J extends BSDialogOptions>
 		this.data = data;
 		return (J) this;
 	}
-	
+
 }

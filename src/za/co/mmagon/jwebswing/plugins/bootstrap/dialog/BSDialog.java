@@ -36,10 +36,10 @@ import java.util.Objects;
 		url = "https://github.com/EugenMayer/bootstrap-dialog", wikiUrl = "https://github.com/GedMarc/JWebSwing-BootstrapDialog/wiki")
 public class BSDialog<J extends BSDialog<J>> extends Div<BSDialogChildren, BSDialogAttributes, BSDialogFeatures, BSDialogEvents, J>
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	private BSDialogFeature feature;
-	
+
 	/**
 	 * Constructs a new instance of the Bootstrap Dialog Plugin
 	 */
@@ -47,7 +47,7 @@ public class BSDialog<J extends BSDialog<J>> extends Div<BSDialogChildren, BSDia
 	{
 		addFeature(getFeature());
 	}
-	
+
 	/**
 	 * Returns the JQuery Feature for this component
 	 *
@@ -61,18 +61,7 @@ public class BSDialog<J extends BSDialog<J>> extends Div<BSDialogChildren, BSDia
 		}
 		return feature;
 	}
-	
-	/**
-	 * Sets the options on this component
-	 *
-	 * @return
-	 */
-	@Override
-	public BSDialogOptions getOptions()
-	{
-		return getFeature().getOptions();
-	}
-	
+
 	/**
 	 * Shortcut reference to the title in get Options
 	 *
@@ -85,7 +74,18 @@ public class BSDialog<J extends BSDialog<J>> extends Div<BSDialogChildren, BSDia
 		getOptions().setTitle(title);
 		return (J) this;
 	}
-	
+
+	/**
+	 * Sets the options on this component
+	 *
+	 * @return
+	 */
+	@Override
+	public BSDialogOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
+
 	/**
 	 * Sets the message of this dialog
 	 *
@@ -98,7 +98,7 @@ public class BSDialog<J extends BSDialog<J>> extends Div<BSDialogChildren, BSDia
 		getOptions().setMessage(message);
 		return (J) this;
 	}
-	
+
 	@Override
 	public boolean equals(Object o)
 	{
@@ -117,7 +117,7 @@ public class BSDialog<J extends BSDialog<J>> extends Div<BSDialogChildren, BSDia
 		BSDialog<?> bsDialog = (BSDialog<?>) o;
 		return Objects.equals(getComponent(), bsDialog.getComponent());
 	}
-	
+
 	@Override
 	public int hashCode()
 	{
