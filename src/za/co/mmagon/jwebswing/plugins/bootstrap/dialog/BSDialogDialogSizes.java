@@ -19,6 +19,8 @@ package za.co.mmagon.jwebswing.plugins.bootstrap.dialog;
 import com.fasterxml.jackson.annotation.JsonValue;
 import za.co.mmagon.jwebswing.utilities.StaticStrings;
 
+import static za.co.mmagon.jwebswing.utilities.StaticStrings.CHAR_DASH;
+
 /**
  * @author GedMarc
  * @version 1.0
@@ -34,7 +36,7 @@ public enum BSDialogDialogSizes
 	@Override
 	public String toString()
 	{
-		return name().toLowerCase().replace(StaticStrings.CHAR_UNDERSCORE, '-');
+		return name().toLowerCase().replace(StaticStrings.CHAR_UNDERSCORE, CHAR_DASH);
 	}
 
 
