@@ -19,7 +19,6 @@ package za.co.mmagon.jwebswing.plugins.bootstrap.dialog;
 import za.co.mmagon.jwebswing.Component;
 import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
-import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
 
 import java.util.Objects;
 
@@ -49,7 +48,7 @@ public class BSDialogFeature<J extends BSDialogFeature<J>> extends Feature<BSDia
 	{
 		super("BSDialogFeature");
 		setComponent(forComponent);
-		BootstrapPageConfigurator.setRequired(forComponent, true);
+
 	}
 
 	/**
