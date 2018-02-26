@@ -60,10 +60,8 @@ public class BSDialogPageConfigurator extends PageConfigurator
 	{
 		if (!page.isConfigured())
 		{
-			log.fine("Configuring Bootstrap Dialog");
 			page.getBody().getJavascriptReferences().add(BSDialogReferencePool.BootstrapDialogReference.getJavaScriptReference());
 			page.getBody().getCssReferences().add(BSDialogReferencePool.BootstrapDialogReference.getCssReference());
-			log.fine("Finished with Bootstrap Dialog");
 		}
 
 		return page;
