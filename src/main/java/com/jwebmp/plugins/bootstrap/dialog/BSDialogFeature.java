@@ -20,8 +20,6 @@ import com.jwebmp.core.Component;
 import com.jwebmp.core.Feature;
 import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 
-import java.util.Objects;
-
 /**
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
  *
@@ -30,8 +28,7 @@ import java.util.Objects;
  * @since 2013/01/16
  */
 public class BSDialogFeature<J extends BSDialogFeature<J>>
-		extends Feature<BSDialogOptions, J>
-		implements BSDialogFeatures, GlobalFeatures
+		extends Feature<GlobalFeatures, BSDialogOptions, J>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -56,26 +53,13 @@ public class BSDialogFeature<J extends BSDialogFeature<J>>
 	@Override
 	public int hashCode()
 	{
-		return Objects.hash(super.hashCode(), getOptions());
+		return super.hashCode();
 	}
 
 	@Override
-	public boolean equals(Object o)
+	public boolean equals(Object obj)
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (!(o instanceof BSDialogFeature))
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-		BSDialogFeature<?> that = (BSDialogFeature<?>) o;
-		return Objects.equals(getComponent(), that.getComponent());
+		return super.equals(obj);
 	}
 
 	/**
