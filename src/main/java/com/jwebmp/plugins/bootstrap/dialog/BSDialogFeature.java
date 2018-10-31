@@ -31,7 +31,7 @@ public class BSDialogFeature<J extends BSDialogFeature<J>>
 		extends Feature<GlobalFeatures, BSDialogOptions, J>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * The options for the dialog
 	 */

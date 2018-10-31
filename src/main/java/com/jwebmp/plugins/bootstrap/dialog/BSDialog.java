@@ -40,7 +40,7 @@ public class BSDialog<J extends BSDialog<J>>
 		extends Div<BSDialogChildren, BSDialogAttributes, BSDialogFeatures, BSDialogEvents, J>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private BSDialogFeature feature;
 
 	/**
