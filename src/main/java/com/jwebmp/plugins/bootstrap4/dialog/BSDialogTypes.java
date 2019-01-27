@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.bootstrap.dialog;
+package com.jwebmp.plugins.bootstrap4.dialog;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.jwebmp.core.utilities.StaticStrings;
@@ -26,11 +26,14 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
  * @version 1.0
  * @since Oct 3, 2016
  */
-public enum BSDialogDialogSizes
+public enum BSDialogTypes
 {
-	SIZE_NORMAL,
-	SIZE_WIDE,
-	SIZE_LARGE;
+	TYPE_DEFAULT,
+	TYPE_INFO,
+	TYPE_PRIMARY,
+	TYPE_SUCCESS,
+	TYPE_WARNING,
+	TYPE_DANGER;
 
 	@JsonValue
 	@Override

@@ -14,33 +14,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.bootstrap.dialog;
+package com.jwebmp.plugins.bootstrap4.dialog;
 
-import com.fasterxml.jackson.annotation.JsonValue;
-import com.jwebmp.core.utilities.StaticStrings;
-
-import static com.jwebmp.core.utilities.StaticStrings.*;
+import com.jwebmp.core.base.html.interfaces.events.GlobalEvents;
 
 /**
  * @author GedMarc
  * @version 1.0
- * @since Oct 3, 2016
+ * @since 07 Aug 2015
  */
-public enum BSDialogTypes
+public interface BSDialogEvents
+		extends GlobalEvents
 {
-	TYPE_DEFAULT,
-	TYPE_INFO,
-	TYPE_PRIMARY,
-	TYPE_SUCCESS,
-	TYPE_WARNING,
-	TYPE_DANGER;
-
-	@JsonValue
-	@Override
-	public String toString()
-	{
-		return name().toLowerCase()
-		             .replace(StaticStrings.CHAR_UNDERSCORE, CHAR_DASH);
-	}
 
 }

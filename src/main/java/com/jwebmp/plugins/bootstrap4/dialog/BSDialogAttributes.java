@@ -14,17 +14,22 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.bootstrap.dialog;
+package com.jwebmp.plugins.bootstrap4.dialog;
 
-import com.jwebmp.core.base.html.interfaces.events.GlobalEvents;
+import com.jwebmp.core.base.html.interfaces.AttributeDefinitions;
 
 /**
  * @author GedMarc
- * @version 1.0
- * @since 07 Aug 2015
  */
-public interface BSDialogEvents
-		extends GlobalEvents
+enum BSDialogAttributes
+		implements AttributeDefinitions
 {
 
+	Visibility;
+
+	@Override
+	public boolean isKeyword()
+	{
+		return false;
+	}
 }

@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.bootstrap.dialog;
+package com.jwebmp.plugins.bootstrap4.dialog;
 
 import com.jwebmp.core.Component;
 import com.jwebmp.core.base.html.Div;
@@ -41,7 +41,7 @@ public class BSDialog<J extends BSDialog<J>>
 {
 
 
-	private BSDialogFeature feature;
+	private com.jwebmp.plugins.bootstrap4.dialog.BSDialogFeature feature;
 
 	/**
 	 * Constructs a new instance of the Bootstrap Dialog Plugin
