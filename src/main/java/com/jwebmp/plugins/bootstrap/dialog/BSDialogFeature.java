@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.bootstrap4.dialog;
+package com.jwebmp.plugins.bootstrap.dialog;
 
 import com.jwebmp.core.Component;
 import com.jwebmp.core.Feature;
@@ -28,14 +28,14 @@ import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
  * @since 2013/01/16
  */
 public class BSDialogFeature<J extends BSDialogFeature<J>>
-		extends Feature<GlobalFeatures, BSDialogOptions, J>
+		extends Feature<GlobalFeatures, com.jwebmp.plugins.bootstrap4.dialog.BSDialogOptions, J>
 {
 
 
 	/**
 	 * The options for the dialog
 	 */
-	private BSDialogOptions options;
+	private com.jwebmp.plugins.bootstrap4.dialog.BSDialogOptions options;
 
 	/**
 	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
@@ -69,11 +69,11 @@ public class BSDialogFeature<J extends BSDialogFeature<J>>
 	 * @return
 	 */
 	@Override
-	public BSDialogOptions getOptions()
+	public com.jwebmp.plugins.bootstrap4.dialog.BSDialogOptions getOptions()
 	{
 		if (options == null)
 		{
-			options = new BSDialogOptions();
+			options = new com.jwebmp.plugins.bootstrap4.dialog.BSDialogOptions();
 		}
 		return options;
 	}

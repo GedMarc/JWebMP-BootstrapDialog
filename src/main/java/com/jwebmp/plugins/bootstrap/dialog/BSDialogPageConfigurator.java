@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.bootstrap4.dialog;
+package com.jwebmp.plugins.bootstrap.dialog;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
@@ -87,10 +87,10 @@ public class BSDialogPageConfigurator
 		{
 			page.getBody()
 			    .getJavascriptReferences()
-			    .add(BSDialogReferencePool.BootstrapDialogReference.getJavaScriptReference());
+			    .add(com.jwebmp.plugins.bootstrap4.dialog.BSDialogReferencePool.BootstrapDialogReference.getJavaScriptReference());
 			page.getBody()
 			    .getCssReferences()
-			    .add(BSDialogReferencePool.BootstrapDialogReference.getCssReference());
+			    .add(com.jwebmp.plugins.bootstrap4.dialog.BSDialogReferencePool.BootstrapDialogReference.getCssReference());
 		}
 
 		return page;

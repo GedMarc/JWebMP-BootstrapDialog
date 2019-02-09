@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.bootstrap4.dialog;
+package com.jwebmp.plugins.bootstrap.dialog;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -40,7 +40,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 {
 
 
-	private BSDialogTypes type;
+	private com.jwebmp.plugins.bootstrap4.dialog.BSDialogTypes type;
 	private BSDialogDialogSizes size;
 	private String cssClass;
 	@JsonIgnore
@@ -74,7 +74,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	 *
 	 * @return
 	 */
-	public BSDialogTypes getType()
+	public com.jwebmp.plugins.bootstrap4.dialog.BSDialogTypes getType()
 	{
 		return type;
 	}
@@ -87,7 +87,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	 *
 	 * @return
 	 */
-	public J setType(BSDialogTypes type)
+	public J setType(com.jwebmp.plugins.bootstrap4.dialog.BSDialogTypes type)
 	{
 		this.type = type;
 		return (J) this;

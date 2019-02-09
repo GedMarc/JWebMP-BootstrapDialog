@@ -1,4 +1,4 @@
-package com.jwebmp.plugins.bootstrap4.dialog.implementations;
+package com.jwebmp.plugins.bootstrap.dialog.implementations;
 
 import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
 import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
