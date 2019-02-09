@@ -87,10 +87,10 @@ public class BSDialogPageConfigurator
 		{
 			page.getBody()
 			    .getJavascriptReferences()
-			    .add(com.jwebmp.plugins.bootstrap4.dialog.BSDialogReferencePool.BootstrapDialogReference.getJavaScriptReference());
+			    .add(BSDialogReferencePool.BootstrapDialogReference.getJavaScriptReference());
 			page.getBody()
 			    .getCssReferences()
-			    .add(com.jwebmp.plugins.bootstrap4.dialog.BSDialogReferencePool.BootstrapDialogReference.getCssReference());
+			    .add(BSDialogReferencePool.BootstrapDialogReference.getCssReference());
 		}
 
 		return page;

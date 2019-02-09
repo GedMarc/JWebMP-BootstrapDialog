@@ -41,7 +41,7 @@ public class BSDialog<J extends BSDialog<J>>
 {
 
 
-	private com.jwebmp.plugins.bootstrap4.dialog.BSDialogFeature feature;
+	private BSDialogFeature feature;
 
 	/**
 	 * Constructs a new instance of the Bootstrap Dialog Plugin

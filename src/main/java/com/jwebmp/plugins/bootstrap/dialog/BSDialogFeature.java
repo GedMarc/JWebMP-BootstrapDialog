@@ -28,14 +28,14 @@ import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
  * @since 2013/01/16
  */
 public class BSDialogFeature<J extends BSDialogFeature<J>>
-		extends Feature<GlobalFeatures, com.jwebmp.plugins.bootstrap4.dialog.BSDialogOptions, J>
+		extends Feature<GlobalFeatures, BSDialogOptions, J>
 {
 
 
 	/**
 	 * The options for the dialog
 	 */
-	private com.jwebmp.plugins.bootstrap4.dialog.BSDialogOptions options;
+	private BSDialogOptions options;
 
 	/**
 	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
@@ -69,11 +69,11 @@ public class BSDialogFeature<J extends BSDialogFeature<J>>
 	 * @return
 	 */
 	@Override
-	public com.jwebmp.plugins.bootstrap4.dialog.BSDialogOptions getOptions()
+	public BSDialogOptions getOptions()
 	{
 		if (options == null)
 		{
-			options = new com.jwebmp.plugins.bootstrap4.dialog.BSDialogOptions();
+			options = new BSDialogOptions();
 		}
 		return options;
 	}

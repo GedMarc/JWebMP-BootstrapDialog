@@ -40,7 +40,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 {
 
 
-	private com.jwebmp.plugins.bootstrap4.dialog.BSDialogTypes type;
+	private BSDialogTypes type;
 	private BSDialogDialogSizes size;
 	private String cssClass;
 	@JsonIgnore
@@ -74,7 +74,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	 *
 	 * @return
 	 */
-	public com.jwebmp.plugins.bootstrap4.dialog.BSDialogTypes getType()
+	public BSDialogTypes getType()
 	{
 		return type;
 	}
@@ -87,7 +87,7 @@ public class BSDialogOptions<J extends BSDialogOptions>
 	 *
 	 * @return
 	 */
-	public J setType(com.jwebmp.plugins.bootstrap4.dialog.BSDialogTypes type)
+	public J setType(BSDialogTypes type)
 	{
 		this.type = type;
 		return (J) this;
